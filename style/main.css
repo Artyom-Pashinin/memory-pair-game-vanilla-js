@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&display=swap');
+
+body {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  padding: 1rem;
+  background-color: var(--btn-bg-light);
+  color: var(--btn-text-light);
+}
+
+.btn:hover {
+  background-color: var(--btn-bg-hover-light);
+  color: var(--btn-text-hover-light);
+}
+
+.btn__accent {
+  background-color: var(--btn-bg-accent);
+  color: var(--btn-text-accent);
+}
+
+.btn__accent:hover {
+  background-color: var(--btn-bg-hover-accent);
+  color: var(--btn-text-hover-accent);
+  box-shadow: 0 0 0.4rem var(--btn-shadow-accent);
+}

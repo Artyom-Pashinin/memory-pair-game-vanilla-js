@@ -1,0 +1,76 @@
+.tile {
+  /* width: var(--tile-width-small);
+  height: var(--tile-height-small); */
+  background-color: transparent;
+  border-radius: var(--tile-border-radius);
+  perspective: 1000px; /* for 3D */
+}
+
+.tile * {
+  pointer-events: none;
+}
+
+.tile-inner {
+  border-radius: var(--tile-border-radius);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform var(--tile-flip-animation-speed);
+  transform-style: preserve-3d;
+}
+
+.tile-front, .tile-back {
+  border-radius: var(--tile-border-radius);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Safari */
+}
+
+.tile-front {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: white;
+}
+
+.tile-back {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 80%;
+  background-color: white;
+  transform: rotateY(180deg);
+}
+
+.tile--guessed .tile-back {
+  background-color: var(--tile-guessed-color-light);
+  outline: 3px solid var(--tile-guessed-color-light);
+  background-blend-mode: darken;
+}
+
+.tile--opened .tile-inner{
+  outline: 1px solid black;
+}
+
+.tile--closed {
+  /* outline: 5px solid black; */
+  background-image: none;
+}
+
+
+/* animation */
+
+.tile--opened .tile-inner, .tile--guessed .tile-inner {
+  transform: rotateY(180deg);
+}
+
+.tile--closed .tile-inner {
+  transform: rotateY(0deg);
+}
+
+* .tile-inner {
+  transition-property: transform background-image;
+  transition-duration: var(--tile-flip-animation-speed);
+  transition-timing-function: ease;
+}

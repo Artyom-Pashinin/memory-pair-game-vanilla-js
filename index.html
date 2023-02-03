@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/variables.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/game.css">
+    <link rel="stylesheet" href="style/sidemenu.css">
+    <link rel="stylesheet" href="style/tile.css">
+    <link rel="stylesheet" href="style/game-stat.css">
+    <title>Memory Pair Game</title>
+  </head>
+  <body>
+    <div data-side-menu class="side-menu">
+      <p class="side-menu__title">Memory game</p>
+      <button data-new-game-btn class="side-menu__new-game-btn btn btn__accent">New game</button>
+      <hr>
+      <p class="side-menu__label">Pick layout:</p>
+      <div data-layout-btns class="sidemenu__layout-btns">
+        <!-- Layout options go here -->
+      </div>
+    </div>
+    <div class="game-wrapper">
+      <div data-board class="board">
+        <!-- Game tiles go here -->
+      </div>
+    </div>
+    <div data-statistics class="game-stat">
+      <div class="game-stat__moves-counter">
+        Moves: <span data-moves-counter></span>
+      </div>
+      <div class="game-stat__remaining-time">
+        Time: <span data-time></span>
+      </div>
+      <div class="game-stat__points">
+        Score: <span data-points></span>
+      </div>
+    </div>
+    <script src="script/config.js"></script>
+    <script src="script/helpers.js"></script>
+    <script src="script/Settings.js"></script>
+    <script src="script/Tile.js"></script>
+    <script src="script/Board.js"></script>
+    <script src="script/Statistics.js"></script>
+    <script src="script/Game.js"></script>
+    <script src="script/app.js"></script>
+  </body>
+</html>

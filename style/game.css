@@ -1,0 +1,14 @@
+.game-wrapper {
+  height: 80vh;
+  padding-left: var(--side-menu-width);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--game-area-bg-light);
+}
+
+.board {
+  display: grid;
+  gap: 10px;
+}

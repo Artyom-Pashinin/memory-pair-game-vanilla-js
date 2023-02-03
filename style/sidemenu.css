@@ -1,0 +1,45 @@
+.side-menu {
+  width: var(--side-menu-width);
+  background-color: var(--menu-bg-color-light);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  padding-block: 1.3rem;
+}
+
+.side-menu button {
+  width: 100%;
+  cursor: pointer;
+}
+
+.sidemenu__layout-btns {
+  width: 100%;
+}
+
+.side-menu__layout-option-btn {
+  text-align: center;
+  cursor: pointer;
+}
+
+.side-menu__layout-option-btn--selected,
+.side-menu__layout-option-btn--selected:hover {
+  background-color: white;
+  color: var(--btn-text-hover-light);
+}
+
+.side-menu__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.side-menu__label {
+  font-size: 1.2rem;
+}

@@ -1,0 +1,66 @@
+:root {
+  /* ----------------------- */
+  /* define interface colors */
+  /* ----------------------- */
+
+  /* ligth theme colors */
+  --priamry-light: rgb(234, 232, 232);
+  --secondary-light: rgb(213, 208, 226);
+  --tertiary-light: rgb(178, 172, 186);
+  --text-light: rgb(78, 78, 78);
+  /* dark theme colors */
+  --primary-dark: rgb(36, 37, 39);
+  --secondary-dark: rgb(60, 57, 67);
+  --tertiary-dark: rgb(112, 106, 137);
+  --text-dark: hwb(220 78% 21%);
+  /* accent */
+  --accent: rgb(116, 102, 238);
+
+
+  
+  /* ----------------------------- */
+  /* set interface elements colors */
+  /* ----------------------------- */
+
+  /* ligth theme */
+  --menu-bg-color-light: var(--secondary-light);
+  --text-color-light: var(--text-light);
+  --game-area-bg-light: var(white);
+  --btn-bg-light: var(--tertiary-light);
+  --btn-text-light: var(--text-light);
+  --btn-bg-hover-light: var(--priamry-light);
+  --btn-shadow-light: var(--text-light);
+  --btn-text-hover-light: black;
+  --tile-guessed-color-light: var(--secondary-light);
+
+  /* dark theme */
+  --menu-bg-color-dark: var(--priamry-dark);
+  --text-color-dark: var(--text-dark);
+  --game-area-bg-dark: var(--secondary-dark);
+  --btn-bg-dark: var(--tertiary-dark);
+  --btn-text-dark: var(--text-dark);
+  --btn-bg-hover-dark: var(--priamry-dark);
+  --btn-shadow-dark: var(--text-dark);
+  --btn-text-hover-dark: white;
+  --tile-guessed-color-dark: var(--tertiary-dark);
+
+  /* accent */
+  --btn-bg-accent: var(--accent);
+  --btn-text-accent: white;
+  --btn-bg-hover-accent: white;
+  --btn-shadow-accent: var(--accent);
+  --btn-text-hover-accent: var(--accent);
+
+  /* ----------------------- */
+  /*         other           */
+  /* ----------------------- */
+
+  --side-menu-width: 11rem;
+  --tile-width-small: 6.25rem;
+  --tile-height-small: 6.25rem;
+  --tile-width-medium: 9.4rem;
+  --tile-height-medium: 9.4rem;
+  --tile-width-large: 12.5rem;
+  --tile-height-large: 12.5rem;
+  --tile-flip-animation-speed: 400ms;
+}
