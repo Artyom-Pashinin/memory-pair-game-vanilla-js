@@ -14,11 +14,9 @@ class Settings {
     // create an option element and append to side menu
     for (let i = 0; i < this.layouts.length; i++) {
       let option = document.createElement("div");
-      option.classList.add("", "btn");
+      option.classList.add("side-menu__layout-option-btn", "btn");
       option.setAttribute('data-layout-option', this.layouts[i].id);
       option.textContent = this.layouts[i].name;
-
-      
 
       this.settingsTemplate.appendChild(option);
     }

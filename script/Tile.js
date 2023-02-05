@@ -23,13 +23,6 @@ class Tile {
     this.tileInner.appendChild(this.tileBack);
 
     this.tileHTML.appendChild(this.tileInner);
-
-    <div className="tile tile--closed" data-tile-id="{ key }">
-      <div className="tile-inner">
-        
-      </div>
-      
-    </div>
   }
 
 
